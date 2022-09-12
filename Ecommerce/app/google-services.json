@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "420839660177",
+    "project_id": "kotlinecommerce-e741e",
+    "storage_bucket": "kotlinecommerce-e741e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420839660177:android:37856eaf2b18b6d9093d30",
+        "android_client_info": {
+          "package_name": "com.anilyilmaz.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420839660177-n40s7nhkfdlu5u0g3m995quf94dmd5uq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anilyilmaz.ecommerce",
+            "certificate_hash": "4546ef670dd5eb05d4ff1b716e77e99d121fc36f"
+          }
+        },
+        {
+          "client_id": "420839660177-vg63r34pjn1sace0opte8j1th4hptbn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS4SC-YpkwkL8z9YfBouhw7O_2RD-KpuQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420839660177-vg63r34pjn1sace0opte8j1th4hptbn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
