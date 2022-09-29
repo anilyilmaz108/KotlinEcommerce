@@ -10,6 +10,7 @@
 - Coroutines
 - View Binding
 - Shimmer Animation
+- Dagger
 
 <img src="https://github.com/anilyilmaz108/KotlinEcommerce/blob/main/Ecommerce/github_images/1.png" width="200"/><img src="https://github.com/anilyilmaz108/KotlinEcommerce/blob/main/Ecommerce/github_images/2.png" width="200"/><img src="https://github.com/anilyilmaz108/KotlinEcommerce/blob/main/Ecommerce/github_images/3.png" width="200"/><img src="https://github.com/anilyilmaz108/KotlinEcommerce/blob/main/Ecommerce/github_images/4.png" width="200"/>
 
