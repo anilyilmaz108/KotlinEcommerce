@@ -8,7 +8,10 @@ data class ProductModel(
     var image_link: String,
     var description: String,
     var rating: Float,
-    var product_type: String
+    var product_type: String,
 
-)
+
+){
+
+}
 

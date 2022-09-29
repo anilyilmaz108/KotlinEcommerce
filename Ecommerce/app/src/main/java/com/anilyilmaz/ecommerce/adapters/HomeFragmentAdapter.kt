@@ -19,10 +19,13 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.squareup.picasso.Picasso
 
 
+
 class HomeFragmentAdapter(private val productList : ArrayList<ProductModel>)
     : RecyclerView.Adapter<HomeFragmentAdapter.RowHolder>() {
     private lateinit var db : FirebaseFirestore
     private lateinit var auth : FirebaseAuth
+
+
 
 
     inner class RowHolder(view:View):RecyclerView.ViewHolder(view){

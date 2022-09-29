@@ -3,6 +3,8 @@ package com.anilyilmaz.ecommerce.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import com.anilyilmaz.ecommerce.dagger.DaggerProductComponent
+import com.anilyilmaz.ecommerce.dagger.ProductMessage
 import com.anilyilmaz.ecommerce.databinding.ActivityDetailsBinding
 import com.anilyilmaz.ecommerce.fragments.CardFragment
 import com.anilyilmaz.ecommerce.models.ProductNumberModel
@@ -10,18 +12,23 @@ import com.anilyilmaz.ecommerce.viewmodels.DetailsActivityViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.squareup.picasso.Picasso
+import javax.inject.Inject
+
 
 class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding
     private lateinit var db : FirebaseFirestore
     private lateinit var auth : FirebaseAuth
     private val viewmodel: DetailsActivityViewModel by viewModels()
-
+    @Inject
+    lateinit var productMessage: ProductMessage
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+       DaggerProductComponent.builder().build().inject(this)
 
         CardFragment.productModelsCard = ArrayList<ProductNumberModel>()
         db = FirebaseFirestore.getInstance()
@@ -66,8 +73,8 @@ class DetailsActivity : AppCompatActivity() {
         }
 
         binding.addToCard.setOnClickListener {
+            productMessage.submitMessage()
             viewmodel.addItem(intent,auth,db,this,finish())
-
         }
     }
 }

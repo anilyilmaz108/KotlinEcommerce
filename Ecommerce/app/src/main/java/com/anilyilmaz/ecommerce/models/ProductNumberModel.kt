@@ -10,4 +10,6 @@ data class ProductNumberModel(
     var rating: Float,
     var product_type: String,
     var product_number: String = "1")
-{}
+{
+
+}
